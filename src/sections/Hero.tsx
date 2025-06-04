@@ -1,13 +1,16 @@
 import { useEffect } from 'react';
+import { faTwitch, faDiscord, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCloud } from '@fortawesome/free-solid-svg-icons';
+import { SocialButton } from '../component/SocialButton';
 
 let runstate = false;
 const jobTitles = [
-        'DevOps',
-        'Full Stack Developer',
-        'Data Analyst',
-        'System Administrator',
-        'Photographer'
-    ];
+    'DevOps',
+    'Full Stack Developer',
+    'Data Analyst',
+    'System Administrator',
+    'Photographer'
+];
 
 function parseJobTitle(title: string) {
     const element: HTMLElement = document.querySelector('#heroJobTitle')!;
@@ -40,38 +43,46 @@ export function Hero() {
 
         parseJobTitle(jobTitles[0]);
     }, []);
-    
+
     return (
         <section id="hero" className="w-screen min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-green-950 via-green-900 to-green-800">
-                <div className="flex flex-col-reverse md:flex-row items-center gap-10 py-16 px-6 max-w-5xl w-full">
-                    <div className="flex-1 flex flex-col items-start">
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-green-100 mb-4">
-                            Hi, I'm Norookezi
-                        </h1>
-                        <h2 className="h-4 text-xl md:text-2xl font-medium text-green-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500" id="heroJobTitle"></h2>
-                        <p className="text-green-400 mb-8 max-w-md">
-                            I automate, deploy, and scale modern infrastructure. Passionate about CI/CD, cloud-native solutions, and building reliable systems.
-                        </p>
-                    </div>
-                    <div className="flex-1 flex justify-center">
-                        <div className='relative group'>
-                            <div
-                                className="rotate-[5deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950 absolute"
-                            />
-                            <div
-                                className="rotate-[10deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950/80 absolute"
-                            />
-                            <div
-                                className="rotate-[15deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950/60 absolute"
-                            />
-                            <img
-                                src="https://norookezi.com/image/norookezi.jpg"
-                                alt="Norookezi's profile picture"
-                                className="z-30 relative rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-900"
-                            />
-                        </div>
+            <div className="flex flex-col-reverse md:flex-row items-center gap-10 py-16 px-6 max-w-5xl w-full">
+                <div className="flex-1 flex flex-col items-start">
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-green-100 mb-4">
+                        Hi, I'm Norookezi
+                    </h1>
+                    <h2 className="h-4 text-xl md:text-2xl font-medium text-green-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500" id="heroJobTitle"></h2>
+                    <p className="text-green-400 mb-8 max-w-md">
+                        I automate, deploy, and scale modern infrastructure. Passionate about CI/CD, cloud-native solutions, and building reliable systems.
+                    </p>
+                    <div className='w-full grid grid-cols-2 md:flex md:flex-row flex-wrap justify-center'>
+                        <SocialButton name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755]" />
+                        <SocialButton name="Twitch" icon={faTwitch} className="text-[#9146FF] hover:bg-[#9146FF55]" />
+                        <SocialButton name="Instagram" icon={faInstagram} className="text-[#E4405F] hover:bg-[#E4405F55]" />
+                        <SocialButton name="Linkedin" icon={faLinkedin} className="text-[#0077B5] hover:bg-[#0077B555]" />
+                        <SocialButton name="Discord" icon={faDiscord} className="text-[#5865F2] hover:bg-[#5865F255]" />
+                        <SocialButton name="BlueSky" icon={faCloud} className="text-[#0099FF] hover:bg-[#0099FF55]" />
                     </div>
                 </div>
-            </section>
+                <div className="flex-1 flex justify-center">
+                    <div className='relative group'>
+                        <div
+                            className="rotate-[5deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950 absolute"
+                        />
+                        <div
+                            className="rotate-[10deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950/80 absolute"
+                        />
+                        <div
+                            className="rotate-[15deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-950/60 absolute"
+                        />
+                        <img
+                            src="https://norookezi.com/image/norookezi.jpg"
+                            alt="Norookezi's profile picture"
+                            className="z-30 relative rounded-3xl shadow-2xl w-72 h-72 object-cover bg-green-900"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }
