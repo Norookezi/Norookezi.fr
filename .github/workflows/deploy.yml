@@ -1,0 +1,84 @@
+name: Deploy to Production
+
+on:
+    release: 
+        types: [created]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-22.04
+    outputs:
+      build_artifact: ${{ steps.upload_build.outputs.artifact }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload build artifact
+        id: upload_build
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: [build]
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Check for TEST key in .env
+        id: check_test_key
+        run: |
+          if [ "${{ env.REACT_NODE_ENV }}" = "TEST" ] || [ "${{ env.REACT_NODE_ENV }}" = "DEV" ]; then
+            echo "isTest=true" >> $GITHUB_OUTPUT
+          else
+            echo "isTest=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Install wireguard
+        if: steps.check_test_key.outputs.isTest == 'false'
+        run: sudo apt-get update && sudo apt-get install -y wireguard resolvconf
+
+      - name: Create WireGuard config
+        if: steps.check_test_key.outputs.isTest == 'false'
+        run: |
+          echo -e "${{ secrets.WG_CONF }}" > ./wg0.conf
+
+      - name: Setup WireGuard interface
+        if: steps.check_test_key.outputs.isTest == 'false'
+        run: |
+          sudo wg-quick up ./wg0.conf
+          sudo wg show
+
+      - name: Setup ssh
+        run: |
+          echo -e "${{ secrets.SSHKEY }}" > identity
+          chmod 400 identity
+          mkdir -p ~/.ssh
+          ssh-keyscan ${{ secrets.SSHHOST }} >> ~/.ssh/known_hosts
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
+      
+      - name: Deploy
+        env:
+          SERVER_IP: ${{ secrets.SSHHOST }}
+          SERVER_USER: ${{ secrets.SSHUSER }}
+          DEPLOY_PATH: ${{ secrets.SSHPATH }}
+        run: |
+          ssh -i identity $SERVER_USER@$SERVER_IP "rm -rf $DEPLOY_PATH/*"
+          scp -i identity -r ./dist/* $SERVER_USER@$SERVER_IP:$DEPLOY_PATH
