@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { faTwitch, faDiscord, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { SocialButton } from '../component/SocialButton';
+import type { SectionProps } from '../section';
 
 let runstate = false;
 const jobTitles = [
@@ -35,7 +36,11 @@ function parseJobTitle(title: string) {
     }, (disapearingChars.length * 80) + (title.length * 100) + 500 + 5000);
 }
 
-export function Hero() {
+export function Hero({ isSelected = false }: SectionProps) {
+    if (isSelected) {
+        document.documentElement.style = 'scroll-snap-type: y mandatory;';
+    }
+
     useEffect(() => {
         if (runstate) return;
 

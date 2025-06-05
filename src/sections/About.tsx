@@ -1,4 +1,9 @@
-export function About() {
+import type { SectionProps } from '../section';
+
+export function About({ isSelected = false }: SectionProps) {
+    if (isSelected) {
+        document.documentElement.style = 'scroll-snap-type: y proximity;';
+    }
 
     return (
         <section id="about" className="w-screen min-h-screen flex flex-col justify-center bg-white/95 dark:bg-gray-900/95 snap-start pb-[10vh]">
