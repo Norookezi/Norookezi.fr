@@ -21,3 +21,9 @@
 
     }
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body, html {
+    scroll-snap-type: y mandatory;
+}
