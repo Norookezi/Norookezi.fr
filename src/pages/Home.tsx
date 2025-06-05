@@ -3,6 +3,7 @@ import { faArrowUp, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Hero } from '../sections/Hero';
 import { useEffect, useState } from 'react';
+import { About } from '../sections/About';
 
 export function Home() {
     const [scrollPosition, updateScroll] = useState<[number, number]>([0, 0]);
@@ -26,6 +27,7 @@ export function Home() {
                 </div>
             </header>
             <Hero />
+            <About />
         </>
     );
 }
