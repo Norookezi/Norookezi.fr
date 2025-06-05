@@ -1,7 +1,7 @@
 export function About() {
 
     return (
-        <section id="about" className="w-screen min-h-screen flex flex-col justify-center bg-white/95 dark:bg-gray-900/95 snap-start">
+        <section id="about" className="w-screen min-h-screen flex flex-col justify-center bg-white/95 dark:bg-gray-900/95 snap-start pb-[10vh]">
             <div className="w-full h-fit max-w-2xl md:max-w-2/3 mx-auto p-10 mt-10 flex flex-col gap-6 sticky top-10">
                 <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 dark:text-white mb-2 tracking-tight">
                     About Me
@@ -20,7 +20,7 @@ export function About() {
                             Hi, I'm Timothé Anquetil
                         </p>
                         <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-1">
-                            <span className="font-bold text-gray-900 dark:text-white">{Math.floor((new Date().getTime() - new Date('06-28-2003').getTime()) / (1000 * 60 * 60 * 24 * 365))} y/o</span> developer from <span className="font-bold text-gray-900 dark:text-white">Le Havre, Normandy</span>.
+                            <span className="font-bold text-gray-900 dark:text-white">{Math.floor((new Date().getTime() - new Date(1056499201000).getTime()) / (1000 * 60 * 60 * 24 * 365))} y/o</span> developer from <span className="font-bold text-gray-900 dark:text-white">Le Havre, Normandy</span>.
                         </p>
                         <div className="flex gap-2 mt-2">
                             <span className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">TypeScript</span>
