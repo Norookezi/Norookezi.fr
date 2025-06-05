@@ -76,7 +76,7 @@ export function Hero() {
                             className="rotate-[15deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950/60 absolute"
                         />
                         <img
-                            src="https://norookezi.com/norookezi.jpg"
+                            src="/assets/norookezi.jpg"
                             alt="Norookezi's profile picture"
                             className="max-md:max-h-[25vh] w-auto aspect-square z-30 relative rounded-3xl shadow-2xl h-72 object-cover bg-green-900"
                         />
