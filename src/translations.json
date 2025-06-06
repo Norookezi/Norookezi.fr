@@ -1,0 +1,96 @@
+{
+    "en": {
+        "lang":"en",
+        "heroTitle": "Hi, I'm Norookezi",
+        "heroJobTitles":[
+            "DevOps",
+            "Full Stack Developer",
+            "Data Analyst",
+            "System Administrator",
+            "Photographer"
+        ],
+        "heroDescription": "I automate, deploy, and scale modern infrastructure. Passionate about CI/CD, server management and building reliable systems.",
+        "aboutMe": {
+            "title": "About Me",
+            "cardTitle": "Hi, I'm Timothé Anquetil",
+            "cardDescription": "I'm <b>{} y/o</b> developer from <b>Le Havre, Normandy</b>.",
+            "description": "Passionate about programming and technology, I love building innovative solutions to complex problems.<br/>Self-taught, I started with <b>Python</b> and <b>PHP</b>, and later expanded to <b>JavaScript</b> and <b>TypeScript</b>.",
+            "description2": "Always curious and eager to learn, I spend my free time exploring new tech, frameworks, and languages.",
+            "QNATitle1":"What am I up to now?",
+            "QNADescription1":"Currently seeking new opportunities to apply my skills and contribute to exciting projects. I'm especially interested in roles involving modern technologies and collaborative teams.",
+            "QNATitle2":"Any hobbies?",
+            "QNADescription2":"When I'm not coding, I enjoy playing video games, exploring the outdoors, and taking pictures. I also love to travel and discover new cultures."
+        },
+        "tech": {
+            "title": "Technologies I Use",
+            "description": "I work with a variety of technologies to build robust and scalable applications. Here are some of the key technologies I use:",
+            "frontEnd": "FrontEnd",
+            "backEnd": "BackEnd",
+            "frameworks": "Frameworks",
+            "database": "Database",
+            "oS": "Operating System",
+            "softwares": "Softwares",
+            "subCardTitle": "Always Learning",
+            "subCardDescription": "I regularly explore new frameworks, tools, and cloud services to stay up-to-date and deliver the best solutions."
+        },
+        "experiences": {
+            "title": "My Experiences",
+            "description": "I have worked on various projects, ranging from web development to database administration. Here are some of my key experiences:"
+        },
+        "studies": {
+            "title": "My studies and certs",
+            "description": "After my A-Levels, i decided continue to learn, here's my keys studies and certifications:"
+        },
+        "projects": {
+            "title": "My Projects",
+            "noProjects": "No projects to show yet. Stay tuned!"
+        }
+    },
+    "fr": {
+        "lang":"fr",
+        "heroTitle": "Bonjour, je suis Norookezi",
+        "heroJobTitles": [
+            "DevOps",
+            "Développeur fullstack",
+            "Data Analyst",
+            "Administrateur système",
+            "Photographe"
+        ],
+        "heroDescription": "J'automatise, déploie et mets en place des infrastructures modernes. Passionné de CI/CD, de gestion de serveurs et de conception de systèmes robustes.",
+        "aboutMe": {
+            "title": "À propos de moi",
+            "cardTitle": "Bonjour, je suis Timothé Anquetil",
+            "cardDescription": "Je suis un développeur de <b>{} ans</b> basé à <b>Le Havre, Normandie</b>.",
+            "description": "Passionné de développement et de technologies en tout genre, j'aime construire des solutions innovantes à des problèmes complexes.<br/>Autodidacte, j'ai commencé la programmation grâce à <b>Python</b> et <b>PHP</b>, puis j'ai développé mes compétences dans des langages comme <b>JavaScript</b> et <b>TypeScript</b>.",
+            "description2": "Toujours curieux et désireux d'apprendre, je passe mon temps libre à découvrir de nouvelles technologies, frameworks et langages.",
+            "QNATitle1": "Où en suis-je maintenant ?",
+            "QNADescription1": "Actuellement à la recherche de nouvelles opportunités pour appliquer mes compétences et contribuer à des projets excitants. Je suis particulièrement intéressé par des missions impliquant de nouvelles technologies et du travail en équipe.",
+            "QNATitle2": "Des passe-temps ?",
+            "QNADescription2": "Quand je ne code pas, j'aime jouer aux jeux vidéo, me promener en plein air et prendre des photos. J'aime également voyager et découvrir de nouvelles cultures."
+        },
+        "tech": {
+            "title": "Les technologies que j'utilise",
+            "description": "Je travaille avec une variété de technologies afin de pouvoir construire des applications robustes et évolutives. Voici les technologies avec lesquelles je travaille le plus :",
+            "frontEnd": "FrontEnd",
+            "backEnd": "BackEnd",
+            "frameworks": "Frameworks",
+            "database": "Base de données",
+            "oS": "Système d'exploitation",
+            "softwares": "Logiciels",
+            "subCardTitle": "Apprentissage continu",
+            "subCardDescription": "J'explore fréquemment de nouveaux frameworks, outils et services cloud pour me tenir à jour et proposer les meilleures solutions."
+        },
+        "experiences": {
+            "title": "Mes expériences",
+            "description": "J'ai pu travailler sur différents projets, allant du développement web à l'administration de bases de données. Voici mes dernières expériences professionnelles :"
+        },
+        "studies": {
+            "title": "Mes études et certifications",
+            "description": "Suite à mon baccalauréat, j'ai décidé de poursuivre mes études. Voici mes études et certifications les plus importantes :"
+        },
+        "projects": {
+            "title": "Mes projets",
+            "noProjects": "Aucun projet pour le moment. Revenez plus tard!"
+        }
+    }
+}

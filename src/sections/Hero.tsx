@@ -3,15 +3,11 @@ import { faTwitch, faDiscord, faInstagram, faLinkedin, faGithub } from '@fortawe
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { SocialButton } from '../component/SocialButton';
 import type { SectionProps } from '../section';
+import { activeTranslation } from '../translation';
+
 
 let runstate = false;
-const jobTitles = [
-    'DevOps',
-    'Full Stack Developer',
-    'Data Analyst',
-    'System Administrator',
-    'Photographer'
-];
+const jobTitles = activeTranslation.heroJobTitles;
 
 function parseJobTitle(title: string) {
     const element: HTMLElement = document.querySelector('#heroJobTitle')!;
@@ -54,11 +50,11 @@ export function Hero({ isSelected = false }: SectionProps) {
             <div className="flex flex-col-reverse md:flex-row items-center gap-10 py-16 px-6 max-w-5xl w-full">
                 <div className="flex-1 flex flex-col items-start">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-green-100 dark:text-gray-100 mb-4">
-                        Hi, I'm Norookezi
+                        {activeTranslation.heroTitle}
                     </h1>
                     <h2 className="h-4 text-xl md:text-2xl font-medium text-green-300 dark:text-gray-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500 dark:after:bg-gray-400" id="heroJobTitle"></h2>
                     <p className="text-green-400 dark:text-gray-400 mb-8 max-w-md">
-                        I automate, deploy, and scale modern infrastructure. Passionate about CI/CD, cloud-native solutions, and building reliable systems.
+                        {activeTranslation.heroDescription}
                     </p>
                     <div className='w-full grid grid-cols-2 md:flex md:flex-row flex-wrap justify-center'>
                         <SocialButton name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />

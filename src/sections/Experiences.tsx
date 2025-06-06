@@ -3,6 +3,7 @@ import type { SectionProps } from '../section';
 import { getData } from '../fetchData';
 import { ErrorFetch } from '../component/ErrorFetch';
 import { LoadingFetch } from '../component/LoadingFetch';
+import { activeTranslation } from '../translation';
 
 interface Experiences {
     title: string
@@ -14,30 +15,30 @@ interface Experiences {
 
 export function Experiences({ isSelected = false }: SectionProps) {
     if (isSelected) {
-        document.documentElement.style = 'scroll-snap-type: y proximity;';
+        document.documentElement.style = 'scroll-snap-type: y none;';
     }
 
     const [experiences, updateExperiences] = useState<{ loading: boolean, error?: string, data?: Experiences[] }>({ loading: true });
 
     useEffect(() => {
-        getData('/assets/experiences.json', updateExperiences);
+        getData(`/assets/experiences-${activeTranslation.lang}.json`, updateExperiences);
     }, []);
 
     return (
         <section id="experiences" className="w-screen min-h-screen flex flex-col justify-center bg-white/95 dark:bg-gray-900/95 snap-start pb-[5vh]">
             <div className="w-full h-fit max-w-2xl md:max-w-2/3 mx-auto p-10 mt-10 flex flex-col gap-6 sticky top-10">
                 <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 dark:text-white mb-2 tracking-tight">
-                    My Experiences
+                    {activeTranslation.experiences.title}
                 </h2>
                 <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed md:text-lg md:leading-relaxed font-medium">
-                    I have worked on various projects, ranging from web development to system administration. Here are some of my key experiences:
+                    {activeTranslation.experiences.description}
                 </p>
                 {experiences.loading && (<LoadingFetch />)}
                 {experiences.error && <ErrorFetch message="Fail fetch experiences" description={experiences.error} />}
                 <ul className="list-disc pl-5 space-y-4">
                     {
                         experiences.data && experiences.data!.map((item, index) => (
-                            <li key={index} className="text-gray-700 dark:text-gray-300 snap-center animate-on-scroll animate-resume-on-back animate-slide-left">
+                            <li key={index} className="text-gray-700 dark:text-gray-300 snap-center animate-once animate-on-scroll animate-resume-on-back animate-slide-left">
                                 <div className="space-y-2">
                                     <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                                         <strong className="text-lg">{item.title}</strong>

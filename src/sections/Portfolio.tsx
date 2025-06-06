@@ -3,7 +3,7 @@ import type { SectionProps } from '../section';
 import { getData } from '../fetchData';
 import { ErrorFetch } from '../component/ErrorFetch';
 import { LoadingFetch } from '../component/LoadingFetch';
-
+import { activeTranslation } from '../translation';
 
 interface Project {
     name: string,
@@ -20,14 +20,14 @@ export function Portfolio({ isSelected = false }: SectionProps) {
     const [projects, updateProjectList] = useState<{ loading: boolean, error?: string, data?: Project[] }>({ loading: true });
 
     useEffect(() => {
-        getData('/assets/projects.json', updateProjectList);
+        getData(`/assets/projects-${activeTranslation.lang}.json`, updateProjectList);
     }, []);
 
     return (
         <section id="projects" className="w-screen min-h-screen flex flex-col bg-white/95 dark:bg-gray-900/95 snap-start pb-[5vh]">
             <div className="w-full h-fit max-w-2xl md:max-w-4xl xl:max-w-7xl mx-auto p-10 mt-10 flex flex-col gap-6">
                 <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 dark:text-white mb-2 tracking-tight">
-                    My Projects
+                    {activeTranslation.projects.title}
                 </h2>
                 {projects.loading && (<LoadingFetch />)}
                 {projects.error && <ErrorFetch message="Fail fetch projects" description={projects.error} />}
@@ -38,7 +38,7 @@ export function Portfolio({ isSelected = false }: SectionProps) {
                         <div className="text-gray-500 dark:text-gray-400 text-center w-full py-8">
                             <span className="text-2xl">🚧</span>
                             <div className="mt-2 font-medium">
-                                No projects to show yet. Stay tuned!
+                                {activeTranslation.projects.noProjects}
                             </div>
                         </div>
                     }

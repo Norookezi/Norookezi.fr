@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Développeur concepteur d'application",
+        "period": "2023 - 2024",
+        "school": "La Manu",
+        "location": "Le Havre, Normandie",
+        "description": [
+            "Dans cette formation, j'ai appris à créer une application et à gérer une équipe.",
+            "Durant cette année, j'ai créé un projet à l'aide de 3 personnes.",
+            "Nous avions choisi la méthode Scrum et chaque semaine, nous changions de Scrum master.",
+            "Durant cette année, j'ai principalement appris la planification d'un projet en réalisant les cahiers des charges, maquettes et plannings prévisionnels."
+        ]
+    },
+    {
+        "title": "Développeur informatique",
+        "period": "2021 - 2023",
+        "school": "CESI",
+        "location": "Rouen, Normandie",
+        "description": [
+            "J'ai pu apprendre les bases de certains langages comme .NET, Go, C++ ainsi que quelques notions de PHP avec Laravel.",
+            "Nous avons réalisé quelques projets :",
+            "· Créer et héberger un serveur WordPress sur Debian à l'aide de VMWare",
+            "· Créer une station météo à l'aide d'un Arduino et créer un dashboard avec Laravel pour consulter les informations",
+            "· Créer une application mobile avec Flutter et la relier à une API via Socket.IO et REST",
+            "· Créer un site pour une compagnie fictive avec un système de caddie",
+            "· Créer une application de tracking avec JavaScript pour suivre un robot dans l'établissement"
+        ]
+    }
+]

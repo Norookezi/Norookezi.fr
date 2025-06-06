@@ -40,10 +40,10 @@ export function Home() {
             document.querySelectorAll('.animate-on-scroll').forEach((el) => {
                 const animateRect = el.getBoundingClientRect();
 
-                if (animateRect.bottom <= window.innerHeight) {
+                if (animateRect.bottom <= window.innerHeight + 200) {
                     if (!el.classList.contains('play')) el.classList.add('play');
                 } else {
-                    el.classList.remove('play');
+                    if (!el.classList.contains('animate-once')) el.classList.remove('play');
                 }
             });
         };
