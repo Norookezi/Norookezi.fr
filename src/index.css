@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "animate.css";
 
 @theme {
     --animate-blink: blink .5s ease-in-out infinite;
