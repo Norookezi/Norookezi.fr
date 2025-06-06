@@ -31,7 +31,7 @@ export function Portfolio({ isSelected = false }: SectionProps) {
                 </h2>
                 {projects.loading && (<LoadingFetch />)}
                 {projects.error && <ErrorFetch message="Fail fetch projects" description={projects.error} />}
-                <div className="flex flex-wrap gap-5 justify-center animate--on-scroll">
+                <div className="flex flex-wrap gap-5 justify-center animate-on-scroll">
                     {
                         projects.data &&
                         projects.data?.length == 0 &&
@@ -42,7 +42,7 @@ export function Portfolio({ isSelected = false }: SectionProps) {
                             </div>
                         </div>
                     }
-                    {projects.data!.length > 0 && projects.data!.map((item, index) => (
+                    {projects.data && projects.data!.length > 0 && projects.data!.map((item, index) => (
                         <a
                             key={index}
                             href={item.url}
