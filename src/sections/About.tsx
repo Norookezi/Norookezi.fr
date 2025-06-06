@@ -11,7 +11,7 @@ export function About({ isSelected = false }: SectionProps) {
                 <h2 className="font-extrabold text-3xl md:text-4xl text-gray-900 dark:text-white mb-2 tracking-tight">
                     About Me
                 </h2>
-                <div className="flex flex-col md:flex-row md:items-center gap-8 bg-gray-300/20 dark:bg-gray-800/40 rounded-2xl p-6 shadow-lg">
+                <div className="flex flex-col md:flex-row md:items-center gap-8 bg-gray-300/20 dark:bg-gray-800/40 rounded-2xl p-6 shadow-lg animate-on-scroll animate-slide-left animate-resume-on-back">
                     <div className="relative w-32 h-32 mx-auto md:mx-0">
                         <img
                             src="/assets/norookezi.jpg"
