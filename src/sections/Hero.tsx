@@ -68,10 +68,10 @@ export function Hero({ isSelected = false }: SectionProps) {
                 <div className="flex-1 flex justify-center">
                     <div className='relative group'>
                         <div
-                            className="rotate-[5deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950 dark:bg-gray-900 absolute"
+                            className="rotate-[5deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950 dark:bg-gray-700 absolute"
                         />
                         <div
-                            className="rotate-[10deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950/80 dark:bg-gray-800/80 absolute"
+                            className="rotate-[10deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950/80 dark:bg-gray-700/80 absolute"
                         />
                         <div
                             className="rotate-[15deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950/60 dark:bg-gray-700/60 absolute"
