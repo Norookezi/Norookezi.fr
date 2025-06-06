@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "animate.css";
 
 @theme {
     --animate-blink: blink .5s ease-in-out infinite;
@@ -20,6 +21,63 @@
 
 
     }
+
+    --animate-slide-left: slide-left .5s ease-in-out;
+
+    @keyframes slide-left {
+
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0%);
+        }
+
+    }
+
+    --animate-hit: hit .5s ease-in-out;
+
+    @keyframes hit {
+
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+
+    }
+
+    --animate-card: card .5s ease-in-out;
+
+    @keyframes card {
+
+        0%, 100% {
+            transform: rotateX(0deg) rotateY(0deg) scale(1);
+        }
+
+        50% {
+            transform: rotateX(10deg) rotateY(10deg) scale(1.1);
+        }
+
+    }
+
+    
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.animate-on-scroll, .animate-on-scroll * {
+    animation-play-state: paused;
+}
+.animate-on-scroll.play, .animate-on-scroll.play * {
+    animation-play-state: running;
+}
+
+.animate-on-scroll.animate-resume-on-back:not(.play), .animate-on-scroll.animate-resume-on-back:not(.play) * {
+    opacity: 0;
+    animation: none !important;
+    animation-play-state: running;
+}
