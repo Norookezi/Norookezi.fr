@@ -5,11 +5,15 @@ import { Hero } from '../sections/Hero';
 import { useEffect, useState } from 'react';
 import { About } from '../sections/About';
 import { Tech } from '../sections/Tech';
+import { Experiences } from '../sections/Experiences';
+import { Studies } from '../sections/Studies';
+import { Portfolio } from '../sections/Portfolio';
 
 export function Home() {
     const [scrollPosition, updateScroll] = useState<[number, number]>([0, 0]);
     const [isDarkMode, setDarkMode] = useState<boolean>(false);
     const [selectedSection, setSelectedSection] = useState<string>('hero');
+
     addEventListener('scroll', () => { updateScroll([window.scrollX, window.scrollY]); });
 
     useEffect(() => {
@@ -32,6 +36,16 @@ export function Home() {
             if (currentSection) {
                 setSelectedSection(currentSection);
             }
+
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                const animateRect = el.getBoundingClientRect();
+
+                if (animateRect.bottom <= window.innerHeight) {
+                    if (!el.classList.contains('play')) el.classList.add('play');
+                } else {
+                    el.classList.remove('play');
+                }
+            });
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -56,6 +70,9 @@ export function Home() {
             <Hero isSelected={selectedSection == 'hero'} />
             <About isSelected={selectedSection == 'about'} />
             <Tech isSelected={selectedSection == 'technology'} />
+            <Experiences isSelected={selectedSection == 'experiences'} />
+            <Studies isSelected={selectedSection == 'studies'} />
+            <Portfolio isSelected={selectedSection == 'projects'} />
         </>
     );
 }
