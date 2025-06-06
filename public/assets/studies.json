@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Application designer and developer",
+        "period": "2023 - 2024",
+        "school": "La Manu",
+        "location": "Le Havre, Normandie",
+        "description": [
+            "In this school, I learn the bases to make an app and manage a team.",
+            "During this year, we had to make project in a group of 3 people.",
+            "We chose to use the Scrum management technic and each week the Scrum master changed.",
+            "During this year, we mainly learned how to plan a project by doing technical specifications, mockups and schedule."
+        ]
+    },
+    {
+        "title": "IT Developer",
+        "period": "2021 - 2023",
+        "school": "CESI",
+        "location": "Rouen, Normandie",
+        "description": [
+            "I've learn basics of some langagues such as DotNet, GoLang, C++, and few lessons of PHP with Laravel.",
+            "We made a couple of project like:",
+            "Create and host a Wordpress server on Debian using VMWare",
+            "Create a Weather Station using an Arduino and create a dashboard using Laravel to read the datas",
+            "Create a mobile app using Flutter and link this app to a web api using SocketIO and REST",
+            "Create a website for a dummy company including a shopping cart system",
+            "Create a tracking app using Javascript to track a robot position"
+        ]
+    }
+]
