@@ -62,7 +62,7 @@ export function Home() {
             <header className={'fixed duration-300 w-screen p-2 items-center top-0 left-0 z-50 dark:invert'}>
                 <div className='bg-gray-400/50 backdrop-blur-xs rounded-2xl px-4 py-2 items-center gap-2 flex justify-between'>
                     <Link to="/" >
-                        <img src="/assets/panda-128.png" className='w-12 invert' alt="Norookezi's logo" />
+                        <img title='Website logo' src="/assets/panda-128.png" className='w-12 h-12 invert' alt="Norookezi's logo" />
                     </Link>
                     <FontAwesomeIcon onClick={() => { setDarkMode(!isDarkMode); }} icon={isDarkMode ? faMoon : faSun} className='text-4xl text-white' />
                 </div>

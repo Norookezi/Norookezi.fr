@@ -15,11 +15,12 @@ export function About({ isSelected = false }: SectionProps) {
                 <div className="flex flex-col md:flex-row md:items-center gap-8 bg-gray-300/20 dark:bg-gray-800/40 rounded-2xl p-6 shadow-lg animate-on-scroll animate-slide-left animate-resume-on-back">
                     <div className="relative w-32 h-32 mx-auto md:mx-0">
                         <img
-                            src="/assets/norookezi.jpg"
+                            title="Norookezi's profile picture"
+                            src="/assets/norookezi.webp"
                             alt="Timothé Anquetil"
                             className="w-32 h-32 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                         />
-                        <img className="w-8 h-8 object-contain absolute bottom-2 right-2 bg-primary bg-white dark:bg-gray-900 text-xs px-2 py-0.5 rounded-full shadow-md" src="/assets/france.png" alt="France" />
+                        <img title="france flag" className="w-8 h-8 object-contain absolute bottom-2 right-2 bg-primary bg-white dark:bg-gray-900 text-xs px-2 py-0.5 rounded-full shadow-md" src="/assets/france.webp" alt="France flag" />
                     </div>
                     <div className="flex-1 flex flex-col justify-center">
                         <p className="text-xl md:text-2xl text-gray-900 dark:text-white font-extrabold mb-1 tracking-tight">

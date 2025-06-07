@@ -50,8 +50,9 @@ export function Portfolio({ isSelected = false }: SectionProps) {
                             className="animate-card bg-white dark:bg-gray-800 rounded-lg w-fit shadow-md overflow-hidden flex flex-col transition-transform"
                         >
                             <img
+                                title={`Illustration of the project ${item.name}`}
                                 src={item.cover}
-                                alt=""
+                                alt={`${item.name} cover picture`}
                                 className="w-64 h-auto aspect-video object-cover bg-gray-200 dark:bg-gray-700"
                             />
                             <div className="p-4 flex flex-col gap-2">
