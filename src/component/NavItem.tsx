@@ -10,7 +10,7 @@ export function NavItem({ name, activeSection }: NavItemProps) {
         <li className="flex flex-1 w-auto flex-col items-center relative group">
             <a
                 href={`#${name.toLowerCase()}`}
-                className={`transition-colors px-2 py-1 rounded ${activeSection == name.toLowerCase() ? `font-bold ${!isHero ? 'text-black' : 'text-white'}` : `${!isHero ? 'text-neutral-500' : 'text-neutral-200'} group-hover:text-neutral-800`}`}
+                className={`transition-colors px-2 py-1 rounded ${activeSection == name.toLowerCase() ? `font-bold ${!isHero ? 'text-black' : 'text-white'}` : `${!isHero ? 'text-neutral-500 dark:text-neutral-400' : 'text-neutral-200'} group-hover:text-neutral-800`}`}
             >
                 {name}
             </a>
