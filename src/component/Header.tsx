@@ -21,7 +21,7 @@ export function Header({ selectedSection = 'hero', navItems }: { selectedSection
                     <Link to={{ pathname: '/' }} onClick={() => { window.scrollTo({ top: 0 }); }} >
                         <img title='Website logo' src="/assets/panda-128.png" className='w-12 h-12 invert dark:invert-0' alt="Norookezi's logo" />
                     </Link>
-                    <ul className={`flex w-[30vw] min-w-[32rem] items-center max-md:flex-col max-md:bg-gray-200/50 max-md:dark:bg-gray-800/30 h-auto ${!isMenuOpen ? 'max-md:max-h-0 max-md:pb-0' : 'max-md:max-h-[100vh] max-md:pb-5'} overflow-clip  max-md:rounded-b-2xl max-md:duration-1000 max-md:backdrop-blur-md max-md:left-1/2 max-md:-translate-x-1/2 max-md:w-[90vw] max-md:*:p-2  gap-2 text-white font-semibold max-md:absolute top-full`}>
+                    <ul className={`flex w-[30vw] md:min-w-[32rem] items-center max-w-[90vw] max-md:flex-col max-md:bg-gray-200/70 max-md:dark:bg-gray-800/70 h-auto ${!isMenuOpen ? 'max-md:max-h-0 max-md:pb-0' : 'max-md:max-h-[100vh] max-md:pb-5'} overflow-clip  max-md:rounded-b-2xl max-md:duration-1000 max-md:backdrop-blur-md max-md:left-1/2 max-md:-translate-x-1/2 max-md:w-[90vw] max-md:*:p-2  gap-2 text-white font-semibold max-md:absolute top-full transition-height`}>
                         {
                             navItems && navItems.map((item, index) => (
                                 <NavItem key={index} name={item} activeSection={selectedSection} />

@@ -4,8 +4,13 @@
     scroll-behavior: smooth;
 }
 
+.transition-height {
+    transition-property: max-height;
+}
+
 @theme {
     --animate-blink: blink .5s ease-in-out infinite;
+
 
     @keyframes blink {
 
