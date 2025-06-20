@@ -23,9 +23,7 @@ export function About({ isSelected = false }: SectionProps) {
                         <img title="france flag" className="w-8 h-8 object-contain absolute bottom-2 right-2 bg-primary bg-white dark:bg-gray-900 text-xs px-2 py-0.5 rounded-full shadow-md" src="/assets/france.webp" alt="France flag" />
                     </div>
                     <div className="flex-1 flex flex-col justify-center">
-                        <p className="text-xl md:text-2xl text-gray-900 dark:text-white font-extrabold mb-1 tracking-tight">
-                            {activeTranslation.aboutMe.cardTitle}
-                        </p>
+                        <p className="text-xl md:text-2xl text-gray-900 dark:text-white font-extrabold mb-1 tracking-tight" dangerouslySetInnerHTML={{ __html: activeTranslation.aboutMe.cardTitle }}></p>
                         <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-1 [&_b]:font-bold [&_b]:text-gray-900 [&_b]:dark:text-white" dangerouslySetInnerHTML={{
                             __html: activeTranslation.aboutMe.cardDescription.replace(
                                 '{}',
@@ -33,9 +31,9 @@ export function About({ isSelected = false }: SectionProps) {
                             ),
                         }}></p>
                         <div className="flex gap-2 mt-2">
-                            <span className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">TypeScript</span>
-                            <span className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">React</span>
-                            <span className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">Node.js</span>
+                            <strong className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">TypeScript</strong>
+                            <strong className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">React</strong>
+                            <strong className="inline-block bg-green-700/20 dark:bg-green-700/40 text-gray-900 dark:text-white text-xs font-medium px-3 py-1 rounded-full">Node.js</strong>
                         </div>
                     </div>
                 </div>

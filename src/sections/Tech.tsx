@@ -19,7 +19,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.frontEnd}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.frontEnd}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '10ms' }} name="Javascript" icon={SiJavascript} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 border-yellow-400/40 text-gray-900" />
                             <LanguageTag style={{ animationDelay: '20ms' }} name="TypeScript" icon={SiTypescript} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 shadow border-blue-400/40 text-white" />
@@ -28,7 +28,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                         </div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.backEnd}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.backEnd}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '50ms' }} name="NodeJS" icon={SiNodedotjs} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-green-400 via-green-500 to-green-600 shadow border-green-400/40 text-white" />
                             <LanguageTag style={{ animationDelay: '60ms' }} name="Python" icon={SiPython} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 shadow border-blue-400/40 text-white" />
@@ -36,7 +36,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                         </div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.frameworks}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.frameworks}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '80ms' }} name="React" icon={SiReact} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-sky-400 via-sky-500 to-sky-600 shadow border-sky-400/40 text-white" />
                             <LanguageTag style={{ animationDelay: '90ms' }} name="VueJS" icon={SiVuedotjs} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-green-400 via-green-500 to-green-600 shadow border-green-400/40 text-white" />
@@ -49,7 +49,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                         </div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.database}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.database}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '160ms' }} name="MariaDB/MySQL" icon={SiMariadb} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-cyan-800 via-cyan-900 to-cyan-950 shadow border-cyan-800/40 text-white" />
                             <LanguageTag style={{ animationDelay: '170ms' }} name="MongoDB" icon={SiMongodb} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-green-400 via-green-500 to-green-600 shadow border-green-400/40 text-white" />
@@ -58,7 +58,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                         </div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.oS}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.oS}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '200ms' }} name="Debian" icon={SiDebian} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 shadow border-pink-400/40 text-white" />
                             <LanguageTag style={{ animationDelay: '210ms' }} name="Windows" icon={SiGitforwindows} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 shadow border-blue-400/40 text-white" />
@@ -66,7 +66,7 @@ export function Tech({ isSelected = false }: SectionProps) {
                         </div>
                     </div>
                     <div className="bg-white/80 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 shadow flex flex-col gap-3">
-                        <p className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.softwares}</p>
+                        <strong className="font-semibold text-gray-800 dark:text-gray-100 mb-1">{activeTranslation.tech.softwares}</strong>
                         <div className="flex flex-wrap gap-2 items-center snap-center">
                             <LanguageTag style={{ animationDelay: '230ms' }} name="Figma" icon={SiFigma} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 shadow border-orange-400/40 text-white" />
                             <LanguageTag style={{ animationDelay: '240ms' }} name="Jira" icon={SiJira} className="animate-on-scroll animate-resume-on-back animate-[hit_1s_ease-in-out] bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 shadow border-blue-400/40 text-white" />

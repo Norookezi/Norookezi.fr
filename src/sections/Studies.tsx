@@ -43,13 +43,13 @@ export function Studies({ isSelected = false }: SectionProps) {
                                     <strong className="text-lg">{item.title}</strong>
                                     <span className="text-sm text-gray-500">({item.period})</span>
                                 </div>
-                                <div className="text-sm text-gray-600 dark:text-gray-400">
+                                <strong className="text-sm text-gray-600 dark:text-gray-400 font-semibold">
                                     <span>{item.company}</span> <span className="mx-1">|</span> <span>{item.location}</span>
-                                </div>
+                                </strong>
                                 {
                                     typeof item.description === 'string' ? item.description : <>
                                         {item.description.map((line, i) => (
-                                            <p key={i}>{line}</p>
+                                            <p key={i} className="*:font-medium" dangerouslySetInnerHTML={{ __html: line }}></p>
                                         ))}
                                     </>
                                 }

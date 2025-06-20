@@ -50,19 +50,18 @@ export function Hero({ isSelected = false }: SectionProps) {
             <div className="flex flex-col-reverse md:flex-row items-center gap-10 py-16 px-6 max-w-5xl w-full">
                 <div className="flex-1 flex flex-col items-start">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-green-100 dark:text-gray-100 mb-4">
-                        {activeTranslation.heroTitle}
+                        {activeTranslation.heroTitle}<strong>Norookezi</strong>
                     </h1>
-                    <h2 className="h-4 text-xl md:text-2xl font-medium text-green-300 dark:text-gray-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500 dark:after:bg-gray-400" id="heroJobTitle"></h2>
-                    <p className="text-green-400 dark:text-gray-400 mb-8 max-w-md">
-                        {activeTranslation.heroDescription}
-                    </p>
+                    <strong className='hidden'>{activeTranslation.heroJobTitles.join(', ')}</strong>
+                    <h2 aria-disabled="true" className="h-4 text-xl md:text-2xl font-medium text-green-300 dark:text-gray-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500 dark:after:bg-gray-400" id="heroJobTitle"></h2>
+                    <p className="text-green-400 dark:text-gray-400 mb-8 max-w-md *:font-medium!" dangerouslySetInnerHTML={{ __html: activeTranslation.heroDescription }} ></p>
                     <div className='w-full grid grid-cols-2 md:flex md:flex-row flex-wrap justify-center'>
-                        <SocialButton name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />
-                        <SocialButton name="Twitch" icon={faTwitch} className="text-[#9146FF] hover:bg-[#9146FF55] dark:hover:bg-[#9146FF33]" />
-                        <SocialButton name="Instagram" icon={faInstagram} className="text-[#E4405F] hover:bg-[#E4405F55] dark:hover:bg-[#E4405F33]" />
-                        <SocialButton name="Linkedin" icon={faLinkedin} className="text-[#0077B5] hover:bg-[#0077B555] dark:hover:bg-[#0077B533]" />
-                        <SocialButton name="Discord" icon={faDiscord} className="text-[#5865F2] hover:bg-[#5865F255] dark:hover:bg-[#5865F233]" />
-                        <SocialButton name="BlueSky" icon={faCloud} className="text-[#0099FF] hover:bg-[#0099FF55] dark:hover:bg-[#0099FF33]" />
+                        <SocialButton href="https://www.twitch.tv/norookezi" name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />
+                        <SocialButton href="https://discord.gg/R8xutC2e5u" name="Twitch" icon={faTwitch} className="text-[#9146FF] hover:bg-[#9146FF55] dark:hover:bg-[#9146FF33]" />
+                        <SocialButton href="https://www.instagram.com/norookezi" name="Instagram" icon={faInstagram} className="text-[#E4405F] hover:bg-[#E4405F55] dark:hover:bg-[#E4405F33]" />
+                        <SocialButton href="https://bsky.app/profile/norookezi.bsky.social" name="Linkedin" icon={faLinkedin} className="text-[#0077B5] hover:bg-[#0077B555] dark:hover:bg-[#0077B533]" />
+                        <SocialButton href="https://github.com/norookezi" name="Discord" icon={faDiscord} className="text-[#5865F2] hover:bg-[#5865F255] dark:hover:bg-[#5865F233]" />
+                        <SocialButton href="https://www.linkedin.com/in/timoth%C3%A9-anquetil-5220a5341/" name="BlueSky" icon={faCloud} className="text-[#0099FF] hover:bg-[#0099FF55] dark:hover:bg-[#0099FF33]" />
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center">

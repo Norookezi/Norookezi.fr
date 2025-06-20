@@ -2,28 +2,28 @@
     {
         "title": "Développeur concepteur d'application",
         "period": "2023 - 2024",
-        "school": "La Manu",
+        "company": "La Manu",
         "location": "Le Havre, Normandie",
         "description": [
-            "Dans cette formation, j'ai appris à créer une application et à gérer une équipe.",
-            "Durant cette année, j'ai créé un projet à l'aide de 3 personnes.",
-            "Nous avions choisi la méthode Scrum et chaque semaine, nous changions de Scrum master.",
-            "Durant cette année, j'ai principalement appris la planification d'un projet en réalisant les cahiers des charges, maquettes et plannings prévisionnels."
+            "Dans cette formation, j'ai appris les bases pour <strong>créer une application</strong> et <strong>gérer une équipe</strong>.",
+            "Durant cette année, nous avons dû réaliser un projet en groupe de 3 personnes.",
+            "Nous avons choisi la <strong>méthode Scrum</strong> et chaque semaine le <strong>Scrum master</strong> changeait.",
+            "Durant cette année, nous avons principalement appris à planifier un projet en réalisant des <strong>cahiers des charges</strong>, des <strong>maquettes</strong> et des <strong>plannings prévisionnels</strong>."
         ]
     },
     {
         "title": "Développeur informatique",
         "period": "2021 - 2023",
-        "school": "CESI",
+        "company": "CESI",
         "location": "Rouen, Normandie",
         "description": [
-            "J'ai pu apprendre les bases de certains langages comme .NET, Go, C++ ainsi que quelques notions de PHP avec Laravel.",
+            "J'ai appris les bases de certains langages comme <strong>.NET</strong>, <strong>Go</strong>, <strong>C++</strong> ainsi que quelques notions de <strong>PHP</strong> avec <strong>Laravel</strong>.",
             "Nous avons réalisé quelques projets :",
-            "· Créer et héberger un serveur WordPress sur Debian à l'aide de VMWare",
-            "· Créer une station météo à l'aide d'un Arduino et créer un dashboard avec Laravel pour consulter les informations",
-            "· Créer une application mobile avec Flutter et la relier à une API via Socket.IO et REST",
-            "· Créer un site pour une compagnie fictive avec un système de caddie",
-            "· Créer une application de tracking avec JavaScript pour suivre un robot dans l'établissement"
+            "Créer et <strong>héberger</strong> un serveur <strong>WordPress</strong> sur <strong>Debian</strong> à l'aide de <strong>VMWare</strong>",
+            "Créer une station météo à l'aide d'un <strong>Arduino</strong> et créer un dashboard avec <strong>Laravel</strong> pour consulter les informations",
+            "Créer une application mobile avec <strong>Flutter</strong> et la relier à une <strong>API web</strong> via <strong>Socket.IO</strong> et <strong>REST</strong>",
+            "Créer un site pour une compagnie fictive avec un système de <strong>caddie</strong>",
+            "Créer une application de tracking avec <strong>JavaScript</strong> pour suivre un robot dans l'établissement"
         ]
     }
 ]

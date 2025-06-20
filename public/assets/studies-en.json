@@ -2,28 +2,28 @@
     {
         "title": "Application designer and developer",
         "period": "2023 - 2024",
-        "school": "La Manu",
+        "company": "La Manu",
         "location": "Le Havre, Normandie",
         "description": [
-            "In this school, I learn the bases to make an app and manage a team.",
+            "In this school, I learn the bases to <strong>make an app</strong> and <strong>manage a team</strong>.",
             "During this year, we had to make project in a group of 3 people.",
-            "We chose to use the Scrum management technic and each week the Scrum master changed.",
-            "During this year, we mainly learned how to plan a project by doing technical specifications, mockups and schedule."
+            "We chose to use the <strong>Scrum management technic</strong> and each week the <strong>Scrum master</strong> changed.",
+            "During this year, we mainly learned how to plan a project by doing <strong>technical specifications</strong>, <strong>mockups</strong> and <strong>schedule</strong>."
         ]
     },
     {
         "title": "IT Developer",
         "period": "2021 - 2023",
-        "school": "CESI",
+        "company": "CESI",
         "location": "Rouen, Normandie",
         "description": [
-            "I've learn basics of some langagues such as DotNet, GoLang, C++, and few lessons of PHP with Laravel.",
+            "I've learn basics of some langagues such as <strong>DotNet</strong>, <strong>GoLang</strong>, <strong>C++</strong>, and few lessons of <strong>PHP</strong> with <strong>Laravel</strong>.",
             "We made a couple of project like:",
-            "Create and host a Wordpress server on Debian using VMWare",
-            "Create a Weather Station using an Arduino and create a dashboard using Laravel to read the datas",
-            "Create a mobile app using Flutter and link this app to a web api using SocketIO and REST",
+            "Create and <strong>host</strong> a Wordpress server on <strong>Debian</strong> using <strong>VMWare</strong>",
+            "Create a Weather Station using an <strong>Arduino</strong> and create a dashboard using <strong>Laravel</strong> to read the datas",
+            "Create a mobile app using <strong>Flutter</strong> and link this app to a <strong>web</strong> api using <strong>SocketIO</strong> and <strong>REST</strong>",
             "Create a website for a dummy company including a shopping cart system",
-            "Create a tracking app using Javascript to track a robot position"
+            "Create a tracking app using <strong>Javascript</strong> to track a robot position"
         ]
     }
 ]

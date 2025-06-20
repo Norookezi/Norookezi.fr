@@ -1,4 +1,4 @@
-const socials: {[key: string]: string} = {
+const socials: { [key: string]: string } = {
     'twitch': 'https://www.twitch.tv/norookezi',
     'discord': 'https://discord.gg/R8xutC2e5u',
     'instagram': 'https://www.instagram.com/norookezi',
@@ -11,7 +11,7 @@ export function Social() {
     const requestedSocial: string = document.location.pathname.slice(1);
 
     document.location.replace(socials[requestedSocial] ?? document.location.host);
-    
+
     return (
         <></>
     );

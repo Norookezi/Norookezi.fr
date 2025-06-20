@@ -5,13 +5,13 @@
         "company": "Caux Seine Agglo",
         "location": "Lillebonne, Normandie",
         "description": [
-            "As a Data Analyst, I gathered data from sensors across the Caux Seine Agglo territory.",
-            "Data was received via: Automatic SFTP drop, CURL, Manual upload.",
-            "I developed a Python API to collect these feeds and upload them into our PostgreSQL database.",
+            "As a <strong>Data Analyst</strong>, I gathered data from sensors across the Caux Seine Agglo territory.",
+            "Data was received via: Automatic <strong>SFTP</strong> drop, CURL, Manual upload.",
+            "I developed a <strong>Python API</strong> to collect these feeds and upload them into our <strong>PostgreSQL database.</strong>",
             "I cleaned the data to remove possible sensor errors or human interference.",
             "I created dashboards with ArcGIS to visualize and export the data on maps.",
-            "Since the dashboards were used by both Caux Seine Agglo staff and external users (such as mayors), I regularly led meetings and gathered feedback to improve the tools.",
-            "I had to write a full documentation in order to help workers to use my app but also for new developers to be able to maintain my code."
+            "Since the dashboards were used by both Caux Seine Agglo staff and external users (such as mayors), I regularly led <strong>meetings and gathered feedback to improve the tools</strong>.",
+            "I had to <strong>write a full documentation</strong> in order to help workers to use my app but also for new developers to be able to maintain my code."
         ]
     },
     {
@@ -21,11 +21,11 @@
         "location": "Le Havre, Normandie",
         "description": [
             "During this internship, I worked on a web application for the same company as my first internship.",
-            "I had to develop a mobile app using Flutter to allow their client to track their shipments in real time using multiple APIs.",
-            "I also had to develop and maintain web tools using JavaScript, PHP and Python to help the company manage their shipments and clients.",
-            "I've worked mainly using Jira's ticketing system to plan my work.",
-            "Since my apps were intended to be used by many people, I had to write documentation for each app or modification I've made.",
-            "I've also had to learn Git and Gitlab in order to version my code and work with multiple developers on the same project."
+            "I had to develop a <strong>mobile app</strong> using <strong>Flutter</strong> to allow their client to track their shipments in real time using multiple <strong>APIs</strong>.",
+            "I also had to develop and maintain web tools using <strong>JavaScript</strong>, <strong>PHP</strong> and <strong>Python</strong> to help the company manage their shipments and clients.",
+            "I've worked mainly using <strong>Jira's ticketing system</strong> to plan my work.",
+            "Since my apps were intended to be used by many people, I had to <strong>write documentation</strong> for each app or modification I've made.",
+            "I've also had to learn <strong>Git</strong> and <strong>Gitlab</strong> in order to version my code and work with multiple developers on the same project."
         ]
     },
     {
@@ -34,12 +34,12 @@
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
-            "On my first internship, I worked as a helpdesk technician for a worldwide import export company.",
-            "I had to manage the company's Database in MSSQL and fix bugs in their WMS.",
-            "Most of my work was to help workers with their issues on our software by taking control of their computer using a remote control tool or by fixing the data directly in the database.",
-            "I had to work in real time on production data, so I had to be very careful and precise in my work while doing the fastest as I could to avoid downtime.",
+            "On my first internship, I worked as a <strong>helpdesk technician</strong> for a worldwide import export company.",
+            "I had to manage the company's <strong>Database in MSSQL</strong> and fix bugs in their WMS.",
+            "Most of my work was to help workers with their issues on our software by taking control of their computer using a <strong>remote control</strong> tool or by fixing the data directly in the database.",
+            "I had to work in real time on production data, so I had to be very <strong>careful and precise</strong> in my work while doing the fastest as I could to avoid downtime.",
             "Since most of the workers were not very tech-savvy, I had to explain to them how to use the tools and how to fix their issues by themselves.",
-            "Since most of my work was repetitive, I had to automate some tasks using Python scripts, SQL stored procedures and PHP scripts to save time and avoid human errors."
+            "Since most of my work was repetitive, I had to automate some tasks using <strong>Python scripts</strong>, <strong>SQL stored procedures</strong> and <strong>PHP scripts</strong> to save time and avoid human errors."
         ]
     }
 ]

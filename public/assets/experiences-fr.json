@@ -5,13 +5,13 @@
         "company": "Caux Seine Agglo",
         "location": "Lillebonne, Normandie",
         "description": [
-            "En tant que Data Analyste, j'ai collecté des données de capteurs à travers le territoire de Caux Seine Agglo.",
-            "Les données étaient reçues via : dépose SFTP automatique, CURL, dépose manuelle.",
-            "J'ai développé une API en Python afin de récolter les différents flux et les publier en base de données.",
+            "En tant que <strong>Data Analyste</strong>, j'ai collecté des données de capteurs à travers le territoire de Caux Seine Agglo.",
+            "Les données étaient reçues via : dépose <strong>SFTP</strong> automatique, CURL, dépose manuelle.",
+            "J'ai développé une <strong>API en Python</strong> afin de récolter les différents flux et les publier en <strong>base de données PostgreSQL</strong>.",
             "J'ai nettoyé les données afin de supprimer les potentielles erreurs de capteur ou interférences humaines.",
             "J'ai ensuite créé des dashboards avec ArcGIS afin de visualiser et d'exporter les données sur une carte.",
-            "Nos dashboards étant à destination à la fois des employés de Caux Seine Agglo mais également d'utilisateurs externes (comme les maires des communes), j'ai régulièrement dirigé des réunions afin de recueillir les avis pour améliorer nos outils.",
-            "J'ai enfin rédigé une documentation complète afin d'aider les employés à utiliser mon application mais également pour que de nouveaux développeurs puissent la reprendre."
+            "Nos dashboards étant à destination à la fois des employés de Caux Seine Agglo mais également d'utilisateurs externes (comme les maires des communes), j'ai régulièrement <strong>dirigé des réunions afin de recueillir les avis pour améliorer nos outils</strong>.",
+            "J'ai enfin <strong>rédigé une documentation complète</strong> afin d'aider les employés à utiliser mon application mais également pour que de nouveaux développeurs puissent la reprendre."
         ]
     },
     {
@@ -21,11 +21,11 @@
         "location": "Le Havre, Normandie",
         "description": [
             "Durant cette alternance, j'ai travaillé sur les application web de la même compagnie que ma première alternance",
-            "J'ai pu développer ue application mobile a l'aide de Flutter pour permettre a leurs clients de suivre en direct leurs cargaisons a l'aide de plusieurs APIs.",
-            "J'ai aussi pu développer et maintenir des outils en Javascript, Python, et PHP afin de permettre a l'entreprise de gerer leurs freit et leurs clients.",
-            "J'ai principalement travaillé via le système de ticket de Jira afin de gérer mes tache et ma charge de travail.",
-            "Mes applications étant destiné a être utilisé par de nombreuse personnes, j'ai du rédiger des documentations pour chaque application développée ou modifiée.",
-            "J'ai aussi pu apprendre Git et Gitlab afin de versionner mon code et travailler en coopération avec d'autres membres de mon équipe."
+            "J'ai pu développer une <strong>application mobile</strong> a l'aide de <strong>Flutter</strong> pour permettre a leurs clients de suivre en direct leurs cargaisons a l'aide de plusieurs <strong>APIs</strong>.",
+            "J'ai aussi pu développer et maintenir des outils en <strong>Javascript</strong>, <strong>Python</strong>, et <strong>PHP</strong> afin de permettre a l'entreprise de gerer leurs freit et leurs clients.",
+            "J'ai principalement travaillé via le <strong>système de ticket de Jira</strong> afin de gérer mes tache et ma charge de travail.",
+            "Mes applications étant destiné a être utilisé par de nombreuse personnes, j'ai du <strong>rédiger des documentations</strong> pour chaque application développée ou modifiée.",
+            "J'ai aussi pu apprendre <strong>Git</strong> et <strong>Gitlab</strong> afin de versionner mon code et travailler en coopération avec d'autres membres de mon équipe."
         ]
     },
     {
@@ -34,12 +34,12 @@
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
-            "Dans le cadre de ma première alternance, j'ai travaillé en tant que technicien de support informatique pour une compagnie d'import export internationnal",
-            "J'ai du administrer les bases de donnée MSSQL et corriger les bugs dans leurs WMS.",
-            "La majeur partie de mon travail concistait a dépaner les employés avec leurs problèmes lié a notre logiciel en prenant le controle a distance sur leurs appareils ou en modifiant les données directement en base de données.",
-            "Mes missions se faisant sur un environement de production en temps réel, je devais être précautieneux et précis dans mon travail tout en gardant une cadance élevée afin d'éviter les arret de production.",
+            "Dans le cadre de ma première alternance, j'ai travaillé en tant que <strong>technicien de support</strong> informatique pour une compagnie d'import export internationnal",
+            "J'ai du administrer les bases de <strong>donnée MSSQL</strong> et corriger les bugs dans leurs WMS.",
+            "La majeur partie de mon travail concistait a dépaner les employés avec leurs problèmes lié a notre logiciel en prenant le <strong>controle a distance</strong> sur leurs appareils ou en modifiant les données directement en base de données.",
+            "Mes missions se faisant sur un environement de production en temps réel, je devais être <strong>précautieneux et précis</strong> dans mon travail tout en gardant une cadance élevée afin d'éviter les arret de production.",
             "La plupart des employées n'étant pas callé en informatique, j'ai du les former a l'utilisation de nos logiciel ainsi que de leurs expliquer les procédures en cas de problème.",
-            "Le travail étant assez répétitif, j'ai du automatiser certaines taches a l'aide de scripts Python, procédures stoquées SQL et de scripts PHP afin de gagner du temps et limiter l'erreur humaine"
+            "Le travail étant assez répétitif, j'ai du automatiser certaines taches a l'aide de <strong>scripts Python</strong>, <strong>procédures stoquées SQL</strong> et de <strong>scripts PHP</strong> afin de gagner du temps et limiter l'erreur humaine"
         ]
     }
 ]
