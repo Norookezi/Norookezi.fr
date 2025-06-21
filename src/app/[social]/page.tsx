@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation';
+
 const socials: { [key: string]: string } = {
     'twitch': 'https://www.twitch.tv/norookezi',
     'discord': 'https://discord.gg/R8xutC2e5u',
@@ -7,12 +9,15 @@ const socials: { [key: string]: string } = {
     'linkedin': 'https://www.linkedin.com/in/timoth%C3%A9-anquetil-5220a5341/'
 };
 
-export function Social() {
-    const requestedSocial: string = document.location.pathname.slice(1);
+type PageProps = {
+    params: { social: string }
+};
 
-    document.location.replace(socials[requestedSocial] ?? document.location.host);
-
-    return (
-        <></>
-    );
+export default async function Page({ params }: PageProps) {
+    const { social } = await params;
+    const url = socials[social];
+    if (url) {
+        redirect(url);
+    }
+    redirect('/');
 }

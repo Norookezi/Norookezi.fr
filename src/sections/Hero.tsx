@@ -1,49 +1,62 @@
-import { useEffect } from 'react';
+// Changes for migrating from Vite to Next.js:
+// 1. Remove direct DOM manipulation (document.querySelector, element.textContent, etc.)
+// 2. Use React state and refs for dynamic content updates
+// 3. Use Next.js <Image> for optimized images
+// 4. Use 'public' folder for static assets (e.g., /public/assets/norookezi.webp)
+// 5. Remove direct style assignment to document.documentElement
+// 6. Remove any code that assumes browser APIs are available at module scope
+
+import { useEffect, useRef, useState } from 'react';
 import { faTwitch, faDiscord, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { SocialButton } from '../component/SocialButton';
-import type { SectionProps } from '../section';
 import { activeTranslation } from '../translation';
+// Next.js image import
+import Image from 'next/image';
 
+const jobTitles = [...activeTranslation.heroJobTitles]; // Copy to avoid mutation issues
 
-let runstate = false;
-const jobTitles = activeTranslation.heroJobTitles;
+export function Hero() {
+    // 1. Use state for job title animation
+    const [displayedTitle, setDisplayedTitle] = useState('');
+    const jobTitleIndex = useRef(0);
+    const animating = useRef(false);
 
-function parseJobTitle(title: string) {
-    const element: HTMLElement = document.querySelector('#heroJobTitle')!;
-
-    const disapearingChars = element.textContent!.split('');
-
-    disapearingChars.forEach((_, index) => {
-        setTimeout(() => {
-            element.textContent = element.textContent!.substring(0, disapearingChars.length - index - 1);
-        }, index * 80);
-    });
-
-    title.split('').forEach((_, index) => {
-        setTimeout(() => {
-            element.textContent = title.substring(0, index + 1);
-        }, ((disapearingChars.length + index) * 100) + 500);
-    });
-
-    setTimeout(() => {
-        jobTitles.push(jobTitles.shift()!);
-        parseJobTitle(jobTitles[0]);
-    }, (disapearingChars.length * 80) + (title.length * 100) + 500 + 5000);
-}
-
-export function Hero({ isSelected = false }: SectionProps) {
-    if (isSelected) {
-        document.documentElement.style = 'scroll-snap-type: y mandatory;';
-    }
-
+    // 2. Animate job title using state instead of direct DOM manipulation
     useEffect(() => {
-        if (runstate) return;
+        const timeoutIds: ReturnType<typeof setTimeout>[] = [];
+        animating.current = true;
 
-        runstate = true;
+        function animateTitle(title: string, prevTitle: string) {
+            // Remove previous title
+            for (let i = 0; i <= prevTitle.length; i++) {
+                timeoutIds.push(setTimeout(() => {
+                    setDisplayedTitle(prevTitle.substring(0, prevTitle.length - i));
+                }, i * 80));
+            }
+            // Add new title
+            for (let i = 0; i <= title.length; i++) {
+                timeoutIds.push(setTimeout(() => {
+                    setDisplayedTitle(title.substring(0, i));
+                }, (prevTitle.length * 80) + i * 100 + 500));
+            }
+            // Schedule next animation
+            timeoutIds.push(setTimeout(() => {
+                jobTitleIndex.current = (jobTitleIndex.current + 1) % jobTitles.length;
+                animateTitle(jobTitles[jobTitleIndex.current], title);
+            }, (prevTitle.length * 80) + (title.length * 100) + 500 + 5000));
+        }
 
-        parseJobTitle(jobTitles[0]);
+        animateTitle(jobTitles[0], '');
+
+        return () => {
+            animating.current = false;
+            timeoutIds.forEach(clearTimeout);
+        };
     }, []);
+
+    // 3. Remove direct style assignment to document.documentElement (Next.js handles scroll snap in CSS)
+    // 4. Use Next.js <Image> for optimized images and move image to /public/assets/norookezi.webp
 
     return (
         <section id="hero" className="snap-center w-screen min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-green-950 via-green-900 to-green-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
@@ -53,7 +66,9 @@ export function Hero({ isSelected = false }: SectionProps) {
                         {activeTranslation.heroTitle}<strong>Norookezi</strong>
                     </h1>
                     <strong className='hidden'>{activeTranslation.heroJobTitles.join(', ')}</strong>
-                    <h2 aria-disabled="true" className="h-4 text-xl md:text-2xl font-medium text-green-300 dark:text-gray-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500 dark:after:bg-gray-400" id="heroJobTitle"></h2>
+                    <h2 aria-disabled="true" className="h-4 text-xl md:text-2xl font-medium text-green-300 dark:text-gray-300 mb-6 after:h-6 after:translate-y-1/4 after:w-1 after:inline-block after:animate-blink after:bg-green-500 dark:after:bg-gray-400" id="heroJobTitle">
+                        {displayedTitle}
+                    </h2>
                     <p className="text-green-400 dark:text-gray-400 mb-8 max-w-md *:font-medium!" dangerouslySetInnerHTML={{ __html: activeTranslation.heroDescription }} ></p>
                     <div className='w-full grid grid-cols-2 md:flex md:flex-row flex-wrap justify-center'>
                         <SocialButton href="https://www.twitch.tv/norookezi" name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />
@@ -75,11 +90,14 @@ export function Hero({ isSelected = false }: SectionProps) {
                         <div
                             className="rotate-[15deg] group-hover:rotate-0 duration-300 rounded-3xl shadow-2xl max-md:max-h-[25vh] w-auto aspect-square h-72 object-cover bg-green-950/60 dark:bg-gray-700/60 absolute"
                         />
-                        <img
+                        <Image
                             title="Norookezi's profile picture"
                             src="/assets/norookezi.webp"
                             alt="Norookezi's profile picture"
+                            width={288} // h-72 = 18rem = 288px
+                            height={288}
                             className="max-md:max-h-[25vh] w-auto aspect-square z-30 relative rounded-3xl shadow-2xl h-72 object-cover bg-green-900 dark:bg-gray-800"
+                            priority
                         />
                     </div>
                 </div>
@@ -87,3 +105,9 @@ export function Hero({ isSelected = false }: SectionProps) {
         </section>
     );
 }
+
+// Summary of changes:
+// - Replaced direct DOM manipulation with React state/refs for job title animation
+// - Used Next.js <Image> for profile picture
+// - Removed document.documentElement.style assignment
+// - Ensured static assets are referenced from /public
