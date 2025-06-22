@@ -1,8 +1,8 @@
 name: Deploy to Production
 
 on:
-    release: 
-        types: [created]
+  release: 
+    types: [created]
 
 jobs:
 
@@ -25,22 +25,13 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload build artifact
-        id: upload_build
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist
-
-  deploy:
+  publish:
     runs-on: ubuntu-22.04
     needs: [build]
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: dist
+
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Check for TEST key in .env
         id: check_test_key
@@ -74,11 +65,35 @@ jobs:
           ssh-keyscan ${{ secrets.SSHHOST }} >> ~/.ssh/known_hosts
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
       
-      - name: Deploy
+      - name: Delete old files
         env:
           SERVER_IP: ${{ secrets.SSHHOST }}
           SERVER_USER: ${{ secrets.SSHUSER }}
           DEPLOY_PATH: ${{ secrets.SSHPATH }}
         run: |
           ssh -i identity $SERVER_USER@$SERVER_IP "rm -rf $DEPLOY_PATH/*"
-          scp -i identity -r ./dist/* $SERVER_USER@$SERVER_IP:$DEPLOY_PATH
+
+      - name: Publish new files
+        env:
+          SERVER_IP: ${{ secrets.SSHHOST }}
+          SERVER_USER: ${{ secrets.SSHUSER }}
+          DEPLOY_PATH: ${{ secrets.SSHPATH }}
+        run: |
+          scp -i identity -r ./* $SERVER_USER@$SERVER_IP:$DEPLOY_PATH
+          ssh -i identity $SERVER_USER@$SERVER_IP "cd $DEPLOY_PATH && rm ./identity"
+
+      - name: Down previous containers
+        env:
+          SERVER_IP: ${{ secrets.SSHHOST }}
+          SERVER_USER: ${{ secrets.SSHUSER }}
+          DEPLOY_PATH: ${{ secrets.SSHPATH }}
+        run: |
+          ssh -i identity $SERVER_USER@$SERVER_IP "cd $DEPLOY_PATH && docker compose ps -q norookezi.fr | grep . && docker compose down norookezi.fr || echo 'No container to stop'"
+
+      - name: Build and start containers
+        env:
+          SERVER_IP: ${{ secrets.SSHHOST }}
+          SERVER_USER: ${{ secrets.SSHUSER }}
+          DEPLOY_PATH: ${{ secrets.SSHPATH }}
+        run: |
+          ssh -i identity $SERVER_USER@$SERVER_IP "cd $DEPLOY_PATH && docker compose build && docker compose up -d"

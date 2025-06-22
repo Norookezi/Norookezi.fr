@@ -1,0 +1,14 @@
+services:
+  norookezi.fr:
+    container_name: norookezi.fr
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "81:3000"
+    volumes:
+      - .:/norookezi.fr
+      - /norookezi.fr/node_modules
+    environment:
+      - NODE_ENV=production
+    restart: always
