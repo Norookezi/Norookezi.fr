@@ -10,7 +10,7 @@ const socials: { [key: string]: string } = {
 };
 
 type PageProps = {
-    params: { social: string }
+    params: Promise<{ social: string }>
 };
 
 export default async function Page({ params }: PageProps) {
