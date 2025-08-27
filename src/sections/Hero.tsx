@@ -71,12 +71,12 @@ export function Hero() {
                     </h2>
                     <p className="text-green-400 dark:text-gray-400 mb-8 max-w-md *:font-medium!" dangerouslySetInnerHTML={{ __html: activeTranslation.heroDescription }} ></p>
                     <div className='w-full grid grid-cols-2 md:flex md:flex-row flex-wrap justify-center'>
-                        <SocialButton href="https://www.twitch.tv/norookezi" name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />
-                        <SocialButton href="https://discord.gg/R8xutC2e5u" name="Twitch" icon={faTwitch} className="text-[#9146FF] hover:bg-[#9146FF55] dark:hover:bg-[#9146FF33]" />
+                        <SocialButton href="https://github.com/norookezi" name="Github" icon={faGithub} className="text-[#181717] hover:bg-[#18171755] dark:text-gray-100 dark:hover:bg-gray-700" />
+                        <SocialButton href="https://www.twitch.tv/norookezi" name="Twitch" icon={faTwitch} className="text-[#9146FF] hover:bg-[#9146FF55] dark:hover:bg-[#9146FF33]" />
                         <SocialButton href="https://www.instagram.com/norookezi" name="Instagram" icon={faInstagram} className="text-[#E4405F] hover:bg-[#E4405F55] dark:hover:bg-[#E4405F33]" />
-                        <SocialButton href="https://bsky.app/profile/norookezi.bsky.social" name="Linkedin" icon={faLinkedin} className="text-[#0077B5] hover:bg-[#0077B555] dark:hover:bg-[#0077B533]" />
-                        <SocialButton href="https://github.com/norookezi" name="Discord" icon={faDiscord} className="text-[#5865F2] hover:bg-[#5865F255] dark:hover:bg-[#5865F233]" />
-                        <SocialButton href="https://www.linkedin.com/in/timoth%C3%A9-anquetil-5220a5341/" name="BlueSky" icon={faCloud} className="text-[#0099FF] hover:bg-[#0099FF55] dark:hover:bg-[#0099FF33]" />
+                        <SocialButton href="https://www.linkedin.com/in/timoth%C3%A9-anquetil-5220a5341/" name="Linkedin" icon={faLinkedin} className="text-[#0077B5] hover:bg-[#0077B555] dark:hover:bg-[#0077B533]" />
+                        <SocialButton href="https://discord.gg/R8xutC2e5u" name="Discord" icon={faDiscord} className="text-[#5865F2] hover:bg-[#5865F255] dark:hover:bg-[#5865F233]" />
+                        <SocialButton href="https://bsky.app/profile/norookezi.bsky.social" name="BlueSky" icon={faCloud} className="text-[#0099FF] hover:bg-[#0099FF55] dark:hover:bg-[#0099FF33]" />
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center">
