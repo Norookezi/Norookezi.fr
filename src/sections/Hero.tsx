@@ -11,8 +11,6 @@ import { faTwitch, faDiscord, faInstagram, faLinkedin, faGithub } from '@fortawe
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { SocialButton } from '../component/SocialButton';
 import { activeTranslation } from '../translation';
-// Next.js image import
-import Image from 'next/image';
 
 const jobTitles = [...activeTranslation.heroJobTitles]; // Copy to avoid mutation issues
 
