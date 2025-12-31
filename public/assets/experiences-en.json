@@ -1,7 +1,20 @@
 [
+        {
+        "title": "Animatrice fablab",
+        "period": "July 2025 - Present",
+        "company": "Mission Locale Le Havre Estuaire Littoral",
+        "location": "Le Havre, Normandie",
+        "description": [
+            "As a facilitator at the <strong>Mission Locale Le Havre Estuaire Littoral</strong>, I am responsible for managing and animating the <strong>fablab</strong>.",
+            "I guide users in the use of equipment such as <strong>3D printers</strong>, <strong>laser cutters</strong>, and others.",
+            "I also conduct workshops on the three types of transition: <strong>digital</strong>, <strong>ecological</strong>, and <strong>energy</strong>.",
+            "I ensure that safety rules are followed and that the equipment is well maintained.",
+            "I collaborate with other facilitators, employees of the Mission Locale, as well as partners of the organization."
+        ]
+    },
     {
         "title": "Data Analyst (Internship)",
-        "period": "2023 - 2024",
+        "period": "November 2023 - December 2024",
         "company": "Caux Seine Agglo",
         "location": "Lillebonne, Normandie",
         "description": [
@@ -16,7 +29,7 @@
     },
     {
         "title": "FullStack developer (Internship)",
-        "period": "2022 - 2023",
+        "period": "April 2022 - August 2023",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
@@ -30,7 +43,7 @@
     },
     {
         "title": "Help desk technician (Internship)",
-        "period": "2021 - 2022",
+        "period": "October 2021 - April 2022",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [

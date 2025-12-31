@@ -1,7 +1,20 @@
 [
     {
+        "title": "Animatrice fablab",
+        "period": "Juillet 2025 - Actuellement",
+        "company": "Mission Locale Le Havre Estuaire Littoral",
+        "location": "Le Havre, Normandie",
+        "description": [
+            "En tant qu'animatrice au sein de la <strong>Mission Locale Le Havre Estuaire Littoral</strong>, je suis responsable de la gestion et de l'animation du <strong>fablab</strong>.",
+            "Je guide les utilisateurs dans l'utilisation des équipements tels que les <strong>imprimantes 3D</strong>, les <strong>découpeuses laser</strong> et autres.",
+            "Je présente également des ateliers sur les trois types de transition : <strong>numérique</strong>, <strong>écologique</strong> et <strong>énergétique</strong>.",
+            "Je m'assure que les règles de sécurité sont respectées et que les équipements sont bien entretenus.",
+            "Je collabore avec d'autres animateurs, employés de la Mission Locale ainsi que des partenaires de la structure."
+        ]
+    },
+    {
         "title": "Data Analyste (Alternance)",
-        "period": "2023 - 2024",
+        "period": "Novembre 2023 - Décembre 2024",
         "company": "Caux Seine Agglo",
         "location": "Lillebonne, Normandie",
         "description": [
@@ -16,7 +29,7 @@
     },
     {
         "title": "Développeuse fullstack (Alternance)",
-        "period": "2022 - 2023",
+        "period": "Avril 2022 - Aout 2023",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
@@ -30,7 +43,7 @@
     },
     {
         "title": "Technicienne support informatique (Alternance)",
-        "period": "2021 - 2022",
+        "period": "Octobre 2021 - Avril 2022",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
