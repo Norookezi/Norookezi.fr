@@ -6,7 +6,7 @@
         "location": "Lillebonne, Normandie",
         "description": [
             "En tant que <strong>Data Analyste</strong>, j'ai collecté des données de capteurs à travers le territoire de Caux Seine Agglo.",
-            "Les données étaient reçues via : dépose <strong>SFTP</strong> automatique, CURL, dépose manuelle.",
+            "Les données étaient reçues via : dépôt <strong>SFTP</strong> automatique, CURL, dépôt manuel.",
             "J'ai développé une <strong>API en Python</strong> afin de récolter les différents flux et les publier en <strong>base de données PostgreSQL</strong>.",
             "J'ai nettoyé les données afin de supprimer les potentielles erreurs de capteur ou interférences humaines.",
             "J'ai ensuite créé des dashboards avec ArcGIS afin de visualiser et d'exporter les données sur une carte.",
@@ -15,31 +15,31 @@
         ]
     },
     {
-        "title": "Développeur fullstack (Alternance)",
+        "title": "Développeuse fullstack (Alternance)",
         "period": "2022 - 2023",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
-            "Durant cette alternance, j'ai travaillé sur les application web de la même compagnie que ma première alternance",
-            "J'ai pu développer une <strong>application mobile</strong> a l'aide de <strong>Flutter</strong> pour permettre a leurs clients de suivre en direct leurs cargaisons a l'aide de plusieurs <strong>APIs</strong>.",
-            "J'ai aussi pu développer et maintenir des outils en <strong>Javascript</strong>, <strong>Python</strong>, et <strong>PHP</strong> afin de permettre a l'entreprise de gerer leurs freit et leurs clients.",
-            "J'ai principalement travaillé via le <strong>système de ticket de Jira</strong> afin de gérer mes tache et ma charge de travail.",
-            "Mes applications étant destiné a être utilisé par de nombreuse personnes, j'ai du <strong>rédiger des documentations</strong> pour chaque application développée ou modifiée.",
-            "J'ai aussi pu apprendre <strong>Git</strong> et <strong>Gitlab</strong> afin de versionner mon code et travailler en coopération avec d'autres membres de mon équipe."
+            "Durant cette alternance, j'ai travaillé sur les applications web de la même compagnie que ma première alternance",
+            "J'ai pu développer une <strong>application mobile</strong> à l'aide de <strong>Flutter</strong> pour permettre à leurs clients de suivre en direct leurs cargaisons à l'aide de plusieurs <strong>APIs</strong>.",
+            "J'ai aussi pu développer et maintenir des outils en <strong>JavaScript</strong>, <strong>Python</strong> et <strong>PHP</strong> afin de permettre à l'entreprise de gérer son <strong>fret</strong> et ses clients.",
+            "J'ai principalement travaillé via le <strong>système de tickets Jira</strong> afin de gérer mes <strong>tâches</strong> et ma charge de travail.",
+            "Mes applications étant destinées à être utilisées par de nombreuses personnes, j'ai dû <strong>rédiger des documentations</strong> pour chaque application développée ou modifiée.",
+            "J'ai aussi appris <strong>Git</strong> et <strong>GitLab</strong> afin de versionner mon code et travailler en coopération avec d'autres membres de mon équipe."
         ]
     },
     {
-        "title": "Technicien support informatique (Alternance)",
+        "title": "Technicienne support informatique (Alternance)",
         "period": "2021 - 2022",
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
-            "Dans le cadre de ma première alternance, j'ai travaillé en tant que <strong>technicien de support</strong> informatique pour une compagnie d'import export internationnal",
-            "J'ai du administrer les bases de <strong>donnée MSSQL</strong> et corriger les bugs dans leurs WMS.",
-            "La majeur partie de mon travail concistait a dépaner les employés avec leurs problèmes lié a notre logiciel en prenant le <strong>controle a distance</strong> sur leurs appareils ou en modifiant les données directement en base de données.",
-            "Mes missions se faisant sur un environement de production en temps réel, je devais être <strong>précautieneux et précis</strong> dans mon travail tout en gardant une cadance élevée afin d'éviter les arret de production.",
-            "La plupart des employées n'étant pas callé en informatique, j'ai du les former a l'utilisation de nos logiciel ainsi que de leurs expliquer les procédures en cas de problème.",
-            "Le travail étant assez répétitif, j'ai du automatiser certaines taches a l'aide de <strong>scripts Python</strong>, <strong>procédures stoquées SQL</strong> et de <strong>scripts PHP</strong> afin de gagner du temps et limiter l'erreur humaine"
+            "Dans le cadre de ma première alternance, j'ai travaillé en tant que <strong>technicienne de support</strong> informatique pour une compagnie d'<strong>import-export</strong> internationale",
+            "J'ai dû administrer les bases de <strong>données MSSQL</strong> et corriger les bugs dans leur WMS.",
+            "La majeure partie de mon travail consistait à dépanner les employés avec leurs problèmes liés à notre logiciel en prenant le <strong>contrôle à distance</strong> de leurs appareils ou en modifiant les données directement en base de données.",
+            "Mes missions se faisant sur un environnement de production en temps réel, je devais être <strong>précautionneuse et précise</strong> dans mon travail tout en gardant une cadence élevée afin d'éviter les arrêts de production.",
+            "La plupart des employés n'étant pas à l'aise en informatique, j'ai dû les former à l'utilisation de notre logiciel ainsi que leur expliquer les procédures en cas de problème.",
+            "Le travail étant assez répétitif, j'ai dû automatiser certaines tâches à l'aide de <strong>scripts Python</strong>, de <strong>procédures stockées SQL</strong> et de <strong>scripts PHP</strong> afin de gagner du temps et limiter l'erreur humaine"
         ]
     }
 ]

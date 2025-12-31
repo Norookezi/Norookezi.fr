@@ -1,14 +1,14 @@
 [
     {
-        "title": "Application designer and developer",
+        "title": "Application Designer and Developer",
         "period": "2023 - 2024",
         "company": "La Manu",
         "location": "Le Havre, Normandie",
         "description": [
-            "In this school, I learn the bases to <strong>make an app</strong> and <strong>manage a team</strong>.",
-            "During this year, we had to make project in a group of 3 people.",
-            "We chose to use the <strong>Scrum management technic</strong> and each week the <strong>Scrum master</strong> changed.",
-            "During this year, we mainly learned how to plan a project by doing <strong>technical specifications</strong>, <strong>mockups</strong> and <strong>schedule</strong>."
+            "In this program, I learned the basics to <strong>build an app</strong> and <strong>manage a team</strong>.",
+            "During the year, we had to complete a project in a group of three.",
+            "We chose the <strong>Scrum framework</strong> and rotated the <strong>Scrum Master</strong> each week.",
+            "We mainly learned how to plan a project by writing <strong>technical specifications</strong>, producing <strong>mockups</strong>, and creating <strong>schedules</strong>."
         ]
     },
     {
@@ -17,13 +17,13 @@
         "company": "CESI",
         "location": "Rouen, Normandie",
         "description": [
-            "I've learn basics of some langagues such as <strong>DotNet</strong>, <strong>GoLang</strong>, <strong>C++</strong>, and few lessons of <strong>PHP</strong> with <strong>Laravel</strong>.",
-            "We made a couple of project like:",
-            "Create and <strong>host</strong> a Wordpress server on <strong>Debian</strong> using <strong>VMWare</strong>",
-            "Create a Weather Station using an <strong>Arduino</strong> and create a dashboard using <strong>Laravel</strong> to read the datas",
-            "Create a mobile app using <strong>Flutter</strong> and link this app to a <strong>web</strong> api using <strong>SocketIO</strong> and <strong>REST</strong>",
+            "I learned the basics of several languages such as <strong>.NET</strong>, <strong>Go</strong>, and <strong>C++</strong>, along with some <strong>PHP</strong> using <strong>Laravel</strong>.",
+            "We completed a couple of projects, such as:",
+            "Creating and <strong>hosting</strong> a <strong>WordPress</strong> server on <strong>Debian</strong> using <strong>VMware</strong>",
+            "Building a weather station with an <strong>Arduino</strong> and a dashboard using <strong>Laravel</strong> to read the data",
+            "Creating a mobile app using <strong>Flutter</strong> and connecting it to a <strong>web API</strong> using <strong>Socket.IO</strong> and <strong>REST</strong>",
             "Create a website for a dummy company including a shopping cart system",
-            "Create a tracking app using <strong>Javascript</strong> to track a robot position"
+            "Creating a tracking app using <strong>JavaScript</strong> to track a robot's position"
         ]
     }
 ]

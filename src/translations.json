@@ -29,7 +29,7 @@
             "frameworks": "Frameworks",
             "database": "Database",
             "oS": "Operating System",
-            "softwares": "Softwares",
+            "softwares": "Software",
             "subCardTitle": "Always Learning",
             "subCardDescription": "I regularly explore new frameworks, tools, and cloud services to stay up-to-date and deliver the best solutions."
         },
@@ -39,7 +39,7 @@
         },
         "studies": {
             "title": "My studies and certs",
-            "description": "After my A-Levels, i decided continue to learn, here's my keys studies and certifications:"
+            "description": "After my A-Levels, I decided to keep learning; here are my key studies and certifications:"
         },
         "projects": {
             "title": "My Projects",
@@ -51,20 +51,20 @@
         "heroTitle": "Bonjour, je suis ",
         "heroJobTitles": [
             "DevOps",
-            "Développeur fullstack",
+            "Développeuse fullstack",
             "Data Analyst",
-            "Administrateur système",
+            "Administratrice système",
             "Photographe"
         ],
-        "heroDescription": "J'automatise, déploie et mets en place des infrastructures modernes. Passionné de <strong>CI/CD</strong>, de <strong>gestion de serveurs</strong> et de <strong>conception de systèmes robustes.</strong>",
+        "heroDescription": "J'automatise, déploie et mets en place des infrastructures modernes. Passionnée de <strong>CI/CD</strong>, de <strong>gestion de serveurs</strong> et de <strong>conception de systèmes robustes.</strong>",
         "aboutMe": {
             "title": "À propos de moi",
             "cardTitle": "Bonjour, je suis <strong>Nora Anquetil</strong>",
-            "cardDescription": "Je suis un développeur de <strong>{} ans</strong> basé à <strong>Le Havre, Normandie</strong>.",
-            "description": "Passionné de développement et de technologies en tout genre, j'aime construire des solutions innovantes à des problèmes complexes.<br/>Autodidacte, j'ai commencé la programmation grâce à <strong>Python</strong> et <strong>PHP</strong>, puis j'ai développé mes compétences dans des langages comme <strong>JavaScript</strong> et <strong>TypeScript</strong>.",
-            "description2": "Toujours curieux et désireux d'apprendre, je passe mon temps libre à découvrir de nouvelles technologies, frameworks et langages.",
+            "cardDescription": "Je suis une développeuse de <strong>{} ans</strong> basée à <strong>Le Havre, Normandie</strong>.",
+            "description": "Passionnée de développement et de technologies en tout genre, j'aime construire des solutions innovantes à des problèmes complexes.<br/>Autodidacte, j'ai commencé la programmation grâce à <strong>Python</strong> et <strong>PHP</strong>, puis j'ai développé mes compétences dans des langages comme <strong>JavaScript</strong> et <strong>TypeScript</strong>.",
+            "description2": "Toujours curieuse et désireuse d'apprendre, je passe mon temps libre à découvrir de nouvelles technologies, frameworks et langages.",
             "QNATitle1": "Où en suis-je maintenant ?",
-            "QNADescription1": "Actuellement à la recherche de nouvelles opportunités pour appliquer mes compétences et contribuer à des projets excitants. Je suis particulièrement intéressé par des missions impliquant de nouvelles technologies et du travail en équipe.",
+            "QNADescription1": "Actuellement à la recherche de nouvelles opportunités pour appliquer mes compétences et contribuer à des projets excitants. Je suis particulièrement intéressée par des missions impliquant de nouvelles technologies et du travail en équipe.",
             "QNATitle2": "Des passe-temps ?",
             "QNADescription2": "Quand je ne code pas, j'aime jouer aux jeux vidéo, me promener en plein air et prendre des photos. J'aime également voyager et découvrir de nouvelles cultures."
         },

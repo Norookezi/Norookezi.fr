@@ -7,11 +7,11 @@
         "description": [
             "As a <strong>Data Analyst</strong>, I gathered data from sensors across the Caux Seine Agglo territory.",
             "Data was received via: Automatic <strong>SFTP</strong> drop, CURL, Manual upload.",
-            "I developed a <strong>Python API</strong> to collect these feeds and upload them into our <strong>PostgreSQL database.</strong>",
+            "I developed a <strong>Python API</strong> to collect these feeds and store them in our <strong>PostgreSQL database</strong>.",
             "I cleaned the data to remove possible sensor errors or human interference.",
             "I created dashboards with ArcGIS to visualize and export the data on maps.",
             "Since the dashboards were used by both Caux Seine Agglo staff and external users (such as mayors), I regularly led <strong>meetings and gathered feedback to improve the tools</strong>.",
-            "I had to <strong>write a full documentation</strong> in order to help workers to use my app but also for new developers to be able to maintain my code."
+            "I <strong>wrote comprehensive documentation</strong> to help users adopt the app and enable new developers to maintain the code."
         ]
     },
     {
@@ -21,11 +21,11 @@
         "location": "Le Havre, Normandie",
         "description": [
             "During this internship, I worked on a web application for the same company as my first internship.",
-            "I had to develop a <strong>mobile app</strong> using <strong>Flutter</strong> to allow their client to track their shipments in real time using multiple <strong>APIs</strong>.",
-            "I also had to develop and maintain web tools using <strong>JavaScript</strong>, <strong>PHP</strong> and <strong>Python</strong> to help the company manage their shipments and clients.",
-            "I've worked mainly using <strong>Jira's ticketing system</strong> to plan my work.",
-            "Since my apps were intended to be used by many people, I had to <strong>write documentation</strong> for each app or modification I've made.",
-            "I've also had to learn <strong>Git</strong> and <strong>Gitlab</strong> in order to version my code and work with multiple developers on the same project."
+            "I developed a <strong>mobile app</strong> using <strong>Flutter</strong> to allow their clients to track shipments in real time using multiple <strong>APIs</strong>.",
+            "I also developed and maintained web tools using <strong>JavaScript</strong>, <strong>PHP</strong>, and <strong>Python</strong> to help the company manage shipments and clients.",
+            "I mainly worked using <strong>Jira's ticketing system</strong> to plan my work.",
+            "Since my apps were intended to be used by many people, I <strong>wrote documentation</strong> for each app and for every change I made.",
+            "I also learned <strong>Git</strong> and <strong>GitLab</strong> to version my code and collaborate with multiple developers on the same project."
         ]
     },
     {
@@ -34,12 +34,12 @@
         "company": "SeaFrigo",
         "location": "Le Havre, Normandie",
         "description": [
-            "On my first internship, I worked as a <strong>helpdesk technician</strong> for a worldwide import export company.",
+            "During my first internship, I worked as a <strong>help desk technician</strong> for a worldwide import-export company.",
             "I had to manage the company's <strong>Database in MSSQL</strong> and fix bugs in their WMS.",
-            "Most of my work was to help workers with their issues on our software by taking control of their computer using a <strong>remote control</strong> tool or by fixing the data directly in the database.",
-            "I had to work in real time on production data, so I had to be very <strong>careful and precise</strong> in my work while doing the fastest as I could to avoid downtime.",
-            "Since most of the workers were not very tech-savvy, I had to explain to them how to use the tools and how to fix their issues by themselves.",
-            "Since most of my work was repetitive, I had to automate some tasks using <strong>Python scripts</strong>, <strong>SQL stored procedures</strong> and <strong>PHP scripts</strong> to save time and avoid human errors."
+            "Most of my work involved helping employees with issues in our software by taking <strong>remote control</strong> of their computers or by fixing data directly in the database.",
+            "I worked in real time on production data, so I had to be very <strong>careful and precise</strong> while resolving issues as quickly as possible to avoid downtime.",
+            "Since most employees were not very tech-savvy, I explained how to use the tools and how to resolve issues on their own.",
+            "Because much of the work was repetitive, I automated tasks using <strong>Python scripts</strong>, <strong>SQL stored procedures</strong>, and <strong>PHP scripts</strong> to save time and reduce human error."
         ]
     }
 ]
